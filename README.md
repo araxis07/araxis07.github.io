@@ -16,8 +16,8 @@ Personal portfolio website for **Pavornprat Mokarat**, a junior software develop
 
 ## Local preview
 
-Serve the `dist` directory with any static file server, or open `dist/index.html` directly.
+Serve the repository root with any static file server, or open `index.html` directly.
 
 ## Deployment
 
-GitHub Actions publishes the `dist` directory to GitHub Pages after each push to `main`.
+GitHub Pages publishes the website directly from the repository root after each push to `main`.
