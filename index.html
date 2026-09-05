@@ -4,14 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#050816" />
+    <meta name="author" content="Pavornprat Mokarat" />
+    <meta name="robots" content="index, follow" />
     <meta name="description" content="Portfolio of Pavornprat Mokarat, a junior software developer building reliable full-stack products with Next.js, React, TypeScript, Supabase, and PostgreSQL." />
-    <meta property="og:title" content="Pavornprat Mokarat — Software Developer" />
+    <meta property="og:title" content="Pavornprat Mokarat — Junior Software Developer" />
     <meta property="og:description" content="Full-stack projects, engineering experience, and the technologies behind my work." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://araxis07.github.io/" />
+    <meta property="og:image" content="https://araxis07.github.io/assets/og-portfolio.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pavornprat Mokarat — Junior Software Developer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pavornprat Mokarat — Junior Software Developer" />
+    <meta name="twitter:description" content="Full-stack products, AI systems, and data-driven interfaces." />
+    <meta name="twitter:image" content="https://araxis07.github.io/assets/og-portfolio.jpg" />
+    <link rel="canonical" href="https://araxis07.github.io/" />
     <link rel="icon" href="./assets/mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Pavornprat Mokarat — Software Developer</title>
+    <title>Pavornprat Mokarat — Junior Software Developer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pavornprat Mokarat",
+        "url": "https://araxis07.github.io/",
+        "jobTitle": "Junior Software Developer",
+        "sameAs": [
+          "https://github.com/araxis07",
+          "https://www.linkedin.com/in/pavornprat/"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Thai-Nichi Institute of Technology"
+        },
+        "knowsAbout": ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "Playwright"]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -46,13 +75,14 @@
       <section class="hero shell" id="top">
         <div class="hero-copy reveal">
           <div class="status-pill"><span></span> Open to junior software development &amp; IT roles</div>
-          <p class="eyebrow">FULL-STACK DEVELOPER · TOKYO / BANGKOK</p>
-          <h1>I build reliable products <span>from interface to infrastructure.</span></h1>
-          <p class="hero-lead">I’m Pavornprat Mokarat, a software developer focused on thoughtful interfaces, secure backend workflows, and products that solve real problems.</p>
+          <p class="eyebrow">JUNIOR SOFTWARE DEVELOPER · TOKYO / BANGKOK</p>
+          <h1>Full-stack products, <span>built with intent.</span></h1>
+          <p class="hero-lead">I build reliable web products with Next.js, React, TypeScript, Node.js, and PostgreSQL—from accessible interfaces to secure backend workflows.</p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="https://github.com/araxis07" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#projects">View projects <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://canva.link/j33ybwperioom0j" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary button-compact" href="https://github.com/araxis07" target="_blank" rel="noreferrer" aria-label="Open GitHub profile">GitHub <span aria-hidden="true">↗</span></a>
           </div>
 
           <dl class="hero-stats" aria-label="Career highlights">
@@ -69,7 +99,7 @@
             <span class="orbit-node node-one" aria-hidden="true"></span>
             <span class="orbit-node node-two" aria-hidden="true"></span>
             <div class="portrait-shell">
-              <img src="https://avatars.githubusercontent.com/u/143167601?v=4" alt="Pavornprat Mokarat" width="240" height="240" />
+              <img src="https://avatars.githubusercontent.com/u/143167601?v=4" alt="Pavornprat Mokarat" width="240" height="240" decoding="async" fetchpriority="high" />
             </div>
             <div class="signal-card signal-top">
               <span class="signal-label">CURRENT ORBIT</span>
@@ -77,11 +107,119 @@
             </div>
             <div class="signal-card signal-bottom">
               <span class="signal-label">CORE SYSTEMS</span>
-              <strong>Next.js · TypeScript · PostgreSQL</strong>
+              <strong>Next.js · Node.js · PostgreSQL</strong>
             </div>
           </div>
         </div>
       </section>
+
+        <dialog class="case-study-dialog" id="case-study-siam" aria-labelledby="case-study-siam-title">
+          <div class="case-study-shell">
+            <header class="case-study-header">
+              <div>
+                <p class="case-study-kicker">01 / FULL-STACK COMMERCE</p>
+                <h2 id="case-study-siam-title">Siam Luxe</h2>
+                <p>A premium multilingual restaurant product built across customer, member, and admin workflows.</p>
+              </div>
+              <form method="dialog"><button class="dialog-close" value="close" aria-label="Close Siam Luxe case study">×</button></form>
+            </header>
+            <div class="case-study-metrics" aria-label="Siam Luxe project summary">
+              <div><span>ROLE</span><strong>Independent full-stack developer</strong></div>
+              <div><span>SCOPE</span><strong>Customer + admin product</strong></div>
+              <div><span>QUALITY</span><strong>Playwright E2E + CI</strong></div>
+            </div>
+            <div class="case-study-body">
+              <section><h3>Problem</h3><p>Turn a restaurant concept into a credible digital dining product that supports discovery, ordering, reservations, loyalty, and business operations—not only a marketing page.</p></section>
+              <section><h3>My role</h3><p>I designed the product structure and user flows, implemented the frontend, integrated authentication and database-backed workflows, and built the admin and QA foundations.</p></section>
+              <section><h3>Engineering approach</h3><p>Next.js and TypeScript provide the application architecture; Supabase Auth and PostgreSQL power real workflows; SQL migrations, validation, rate-limiting foundations, Playwright, and GitHub Actions support reliability.</p></section>
+              <section><h3>Delivered</h3><ul><li>Multilingual customer experience</li><li>Orders, reservations, reviews, favorites, and loyalty flows</li><li>Member profiles and operational admin tooling</li></ul></section>
+            </div>
+            <div class="case-study-gallery" aria-label="Verified Siam Luxe interface screenshots">
+              <figure><img src="https://raw.githubusercontent.com/araxis07/Siam-Luxe/6d3f1790f73f37b62c1a408d1541d3bc991419e1/tests/e2e/visual-smoke.spec.ts-snapshots/reservation-calendar-chromium-darwin.png" alt="Siam Luxe reservation calendar page" loading="lazy" decoding="async" /><figcaption>Reservation calendar · automated visual test snapshot</figcaption></figure>
+              <figure><img src="https://raw.githubusercontent.com/araxis07/Siam-Luxe/6d3f1790f73f37b62c1a408d1541d3bc991419e1/tests/e2e/visual-smoke.spec.ts-snapshots/gift-cards-chromium-darwin.png" alt="Siam Luxe gift card page" loading="lazy" decoding="async" /><figcaption>Gift cards · automated visual test snapshot</figcaption></figure>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>The main product foundation is implemented. Live provider setup, deployment, and production operations remain before a public demo can be offered.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/Siam-Luxe">View source code <span aria-hidden="true">↗</span></a><span>No public demo yet</span></footer>
+          </div>
+        </dialog>
+
+        <dialog class="case-study-dialog" id="case-study-ai" aria-labelledby="case-study-ai-title">
+          <div class="case-study-shell">
+            <header class="case-study-header">
+              <div>
+                <p class="case-study-kicker">02 / DOCUMENT INTELLIGENCE</p>
+                <h2 id="case-study-ai-title">AI Knowledge Base</h2>
+                <p>A private workspace for document ingestion, hybrid retrieval, and grounded AI answers with visible citations.</p>
+              </div>
+              <form method="dialog"><button class="dialog-close" value="close" aria-label="Close AI Knowledge Base case study">×</button></form>
+            </header>
+            <div class="case-study-metrics" aria-label="AI Knowledge Base project summary">
+              <div><span>ARCHITECTURE</span><strong>Modular monolith</strong></div>
+              <div><span>ACCESS</span><strong>Four workspace roles</strong></div>
+              <div><span>RETRIEVAL</span><strong>Vector + full-text</strong></div>
+            </div>
+            <div class="case-study-body">
+              <section><h3>Problem</h3><p>Teams need to search private documents and ask questions without receiving answers detached from their source material or exposing content across workspaces.</p></section>
+              <section><h3>My role</h3><p>I built the application structure, protected workspace experience, ingestion pipeline, retrieval layer, role model, operational surfaces, and automated quality checks.</p></section>
+              <section><h3>Engineering approach</h3><p>Next.js handles the application shell and server workflows. Supabase provides Auth, Storage, Realtime, PostgreSQL, and row-level security, while pgvector and full-text search support hybrid retrieval.</p></section>
+              <section><h3>Delivered</h3><ul><li>PDF, Markdown, and plain-text ingestion</li><li>Grounded Q&amp;A with document citations</li><li>Workspace roles, activity logs, health checks, and CI</li></ul></section>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>Core product flows are implemented. Live AI answers and semantic indexing require provider credentials; invitation and durable worker-queue workflows remain limited.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/AI-Knowledge">View source code <span aria-hidden="true">↗</span></a><span>Provider setup required</span></footer>
+          </div>
+        </dialog>
+
+        <dialog class="case-study-dialog" id="case-study-nexus" aria-labelledby="case-study-nexus-title">
+          <div class="case-study-shell">
+            <header class="case-study-header">
+              <div>
+                <p class="case-study-kicker">03 / BUSINESS SIMULATION</p>
+                <h2 id="case-study-nexus-title">Nexus Tech</h2>
+                <p>A deterministic, terminal-first management simulation about building and scaling a software company.</p>
+              </div>
+              <form method="dialog"><button class="dialog-close" value="close" aria-label="Close Nexus Tech case study">×</button></form>
+            </header>
+            <div class="case-study-metrics" aria-label="Nexus Tech project summary">
+              <div><span>STATUS</span><strong>Stable Alpha</strong></div>
+              <div><span>CONTENT</span><strong>Six featured campaigns</strong></div>
+              <div><span>CATALOG</span><strong>50 scenarios</strong></div>
+            </div>
+            <div class="case-study-body">
+              <section><h3>Problem</h3><p>Create a deep business simulation that stays understandable and replayable without relying on heavy graphics or online infrastructure.</p></section>
+              <section><h3>My role</h3><p>I designed and engineered the simulation systems, terminal experience, content model, persistence, campaigns, progression, and release evidence as an independent project.</p></section>
+              <section><h3>Engineering approach</h3><p>Python powers a deterministic simulation core, Rich and Typer provide the terminal interface, SQLite stores compatible saves, and JSON keeps scenario content separate from game logic.</p></section>
+              <section><h3>Delivered</h3><ul><li>Turn-based company, product, market, team, and finance systems</li><li>Offline saves, authored endings, archive progression, and Empire Mode</li><li>Reusable scenarios, templates, rival archetypes, and automated CI</li></ul></section>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>The local gameplay loop is complete at Stable Alpha. Human playtest sessions and final pacing validation are still required before Beta classification.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/Nexus-Tech">View source code <span aria-hidden="true">↗</span></a><span>Local demo via CLI</span></footer>
+          </div>
+        </dialog>
+
+        <dialog class="case-study-dialog" id="case-study-finance" aria-labelledby="case-study-finance-title">
+          <div class="case-study-shell">
+            <header class="case-study-header">
+              <div>
+                <p class="case-study-kicker">04 / FINTECH FRONTEND</p>
+                <h2 id="case-study-finance-title">Finance Dashboard</h2>
+                <p>A responsive personal-finance interface for transactions, category insights, and AI-ready document upload workflows.</p>
+              </div>
+              <form method="dialog"><button class="dialog-close" value="close" aria-label="Close Finance Dashboard case study">×</button></form>
+            </header>
+            <div class="case-study-metrics" aria-label="Finance Dashboard project summary">
+              <div><span>SCOPE</span><strong>Frontend MVP</strong></div>
+              <div><span>STATE</span><strong>Zustand + local storage</strong></div>
+              <div><span>VISUALS</span><strong>Responsive charts</strong></div>
+            </div>
+            <div class="case-study-body">
+              <section><h3>Problem</h3><p>Personal-finance data is difficult to act on when balances, transactions, spending categories, and document-import workflows are separated or visually unclear.</p></section>
+              <section><h3>My role</h3><p>I designed and implemented the frontend architecture, responsive dashboard, transaction workflow, category visualizations, upload experience, and local persistence.</p></section>
+              <section><h3>Engineering approach</h3><p>Next.js provides the application structure, Tailwind CSS supports responsive presentation, Zustand manages client state, and Recharts communicates expense patterns.</p></section>
+              <section><h3>Delivered</h3><ul><li>Balance, income, and expense overview</li><li>Transaction management and category analytics</li><li>PDF, spreadsheet, and image upload preparation</li></ul></section>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>This is intentionally a frontend-only MVP. Data is stored locally, while OCR parsing, database integration, and investment recommendations remain future work.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/finance-dashboard">View source code <span aria-hidden="true">↗</span></a><span>Frontend MVP</span></footer>
+          </div>
+        </dialog>
 
       <section class="section shell" id="about">
         <div class="section-heading reveal">
@@ -147,13 +285,9 @@
           <div class="projects-grid">
             <article class="project-card project-siam reveal">
               <div class="project-topline"><span>01</span><span>FULL-STACK COMMERCE</span></div>
-              <div class="project-window" aria-hidden="true">
-                <div class="window-bar"><i></i><i></i><i></i><span>siam-luxe.app</span></div>
-                <div class="window-content">
-                  <div class="window-nav"></div>
-                  <div class="window-copy"><span></span><strong></strong><em></em><em></em></div>
-                  <div class="window-orb"></div>
-                </div>
+              <div class="project-window project-screenshot">
+                <img src="https://raw.githubusercontent.com/araxis07/Siam-Luxe/6d3f1790f73f37b62c1a408d1541d3bc991419e1/tests/e2e/visual-smoke.spec.ts-snapshots/reservation-calendar-chromium-darwin.png" alt="Siam Luxe reservation calendar interface" loading="lazy" decoding="async" />
+                <span class="visual-badge">Verified UI snapshot</span>
               </div>
               <div class="project-copy">
                 <h3>Siam Luxe</h3>
@@ -164,7 +298,11 @@
                   <li>Playwright E2E and GitHub Actions</li>
                 </ul>
                 <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span></div>
-                <a class="project-link" href="https://github.com/araxis07/Siam-Luxe" aria-label="View Siam Luxe repository on GitHub">View repository <span aria-hidden="true">→</span></a>
+                <div class="project-actions">
+                  <button class="project-link project-case-study" type="button" data-case-study-open="case-study-siam">View case study <span aria-hidden="true">→</span></button>
+                  <a class="project-source" href="https://github.com/araxis07/Siam-Luxe" aria-label="View Siam Luxe source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-statusline"><span></span>Production-oriented foundation · public deployment pending</p>
               </div>
             </article>
 
@@ -188,7 +326,11 @@
                   <li>Workspace-scoped access with RLS</li>
                 </ul>
                 <div class="tags"><span>Next.js</span><span>pgvector</span><span>Supabase</span><span>Playwright</span></div>
-                <a class="project-link" href="https://github.com/araxis07/AI-Knowledge" aria-label="View AI Knowledge Base repository on GitHub">View repository <span aria-hidden="true">→</span></a>
+                <div class="project-actions">
+                  <button class="project-link project-case-study" type="button" data-case-study-open="case-study-ai">View case study <span aria-hidden="true">→</span></button>
+                  <a class="project-source" href="https://github.com/araxis07/AI-Knowledge" aria-label="View AI Knowledge Base source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-statusline"><span></span>Provider configuration required for live AI flows</p>
               </div>
             </article>
 
@@ -215,7 +357,11 @@
                   <li>SQLite persistence and tested CLI</li>
                 </ul>
                 <div class="tags"><span>Python</span><span>Rich</span><span>Typer</span><span>SQLite</span></div>
-                <a class="project-link" href="https://github.com/araxis07/Nexus-Tech" aria-label="View Nexus Tech repository on GitHub">View repository <span aria-hidden="true">→</span></a>
+                <div class="project-actions">
+                  <button class="project-link project-case-study" type="button" data-case-study-open="case-study-nexus">View case study <span aria-hidden="true">→</span></button>
+                  <a class="project-source" href="https://github.com/araxis07/Nexus-Tech" aria-label="View Nexus Tech source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-statusline"><span></span>Stable Alpha · local and offline-first</p>
               </div>
             </article>
 
@@ -238,7 +384,11 @@
                   <li>Local persistence with mocked parsing</li>
                 </ul>
                 <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>Zustand</span><span>Recharts</span></div>
-                <a class="project-link" href="https://github.com/araxis07/finance-dashboard" aria-label="View Finance Dashboard repository on GitHub">View repository <span aria-hidden="true">→</span></a>
+                <div class="project-actions">
+                  <button class="project-link project-case-study" type="button" data-case-study-open="case-study-finance">View case study <span aria-hidden="true">→</span></button>
+                  <a class="project-source" href="https://github.com/araxis07/finance-dashboard" aria-label="View Finance Dashboard source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-statusline"><span></span>Frontend MVP · OCR and backend integration planned</p>
               </div>
             </article>
           </div>
