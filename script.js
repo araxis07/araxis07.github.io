@@ -48,6 +48,27 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => sectionObserver.observe(section));
 
+const caseStudyDialogs = [...document.querySelectorAll('.case-study-dialog')];
+
+document.querySelectorAll('[data-case-study-open]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const dialog = document.getElementById(button.dataset.caseStudyOpen);
+    if (!(dialog instanceof HTMLDialogElement)) return;
+    document.documentElement.classList.add('dialog-open');
+    dialog.showModal();
+  });
+});
+
+caseStudyDialogs.forEach((dialog) => {
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+
+  dialog.addEventListener('close', () => {
+    document.documentElement.classList.remove('dialog-open');
+  });
+});
+
 const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 const finePointerQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
 
