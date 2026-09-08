@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#050816" />
     <meta name="author" content="Pavornprat Mokarat" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="Portfolio of Pavornprat Mokarat, a junior software developer building reliable full-stack products with Next.js, React, TypeScript, Supabase, and PostgreSQL." />
+    <meta name="description" content="Portfolio of Pavornprat Mokarat, a junior software developer building reliable full-stack products, multilingual travel experiences, and data-driven interfaces." />
     <meta property="og:title" content="Pavornprat Mokarat — Junior Software Developer" />
-    <meta property="og:description" content="Full-stack projects, engineering experience, and the technologies behind my work." />
+    <meta property="og:description" content="Full-stack products, multilingual travel experiences, engineering case studies, and the technologies behind my work." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://araxis07.github.io/" />
     <meta property="og:image" content="https://araxis07.github.io/assets/og-portfolio.jpg" />
@@ -17,7 +17,7 @@
     <meta property="og:image:alt" content="Pavornprat Mokarat — Junior Software Developer" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Pavornprat Mokarat — Junior Software Developer" />
-    <meta name="twitter:description" content="Full-stack products, AI systems, and data-driven interfaces." />
+    <meta name="twitter:description" content="Full-stack products, multilingual travel experiences, AI systems, and data-driven interfaces." />
     <meta name="twitter:image" content="https://araxis07.github.io/assets/og-portfolio.jpg" />
     <link rel="canonical" href="https://araxis07.github.io/" />
     <link rel="icon" href="./assets/mark.svg" type="image/svg+xml" />
@@ -88,7 +88,7 @@
           <dl class="hero-stats" aria-label="Career highlights">
             <div><dt>3.45</dt><dd>GPAX</dd></div>
             <div><dt>2nd</dt><dd>Class Honors</dd></div>
-            <div><dt>4</dt><dd>Selected projects</dd></div>
+            <div><dt>6</dt><dd>Selected projects</dd></div>
           </dl>
         </div>
 
@@ -221,6 +221,58 @@
           </div>
         </dialog>
 
+        <dialog class="case-study-dialog" id="case-study-sakura" aria-labelledby="case-study-sakura-title">
+          <div class="case-study-shell">
+            <header class="case-study-header">
+              <div>
+                <p class="case-study-kicker">05 / MULTILINGUAL TRAVEL PRODUCT</p>
+                <h2 id="case-study-sakura-title">Sakura Trails</h2>
+                <p>A local-first Japan travel guide that combines multilingual editorial content, private trip planning, opt-in maps, and an accessible 3D experience.</p>
+              </div>
+              <form method="dialog"><button class="dialog-close" value="close" aria-label="Close Sakura Trails case study">×</button></form>
+            </header>
+            <div class="case-study-metrics" aria-label="Sakura Trails project summary">
+              <div><span>CONTENT</span><strong>93 destinations</strong></div>
+              <div><span>LOCALIZATION</span><strong>Four languages</strong></div>
+              <div><span>DELIVERY</span><strong>436 prerendered pages</strong></div>
+            </div>
+            <div class="case-study-body">
+              <section><h3>Problem</h3><p>International visitors need a coherent way to discover Japan, compare regional context, and organize a personal journey without surrendering private plans to an account-based service.</p></section>
+              <section><h3>My role</h3><p>I designed and engineered the product architecture, multilingual content model, search and discovery experience, local-first planner, routing, interactive maps, 3D scene, and quality workflow.</p></section>
+              <section><h3>Engineering approach</h3><p>React and TypeScript power the interface; Vite, server rendering, and esbuild produce localized static pages; Three.js creates the seasonal landscape; Leaflet and OpenStreetMap provide consent-based maps.</p></section>
+              <section><h3>Delivered</h3><ul><li>Nine regions, 93 destinations, and nine suggested journeys</li><li>Search, filters, bookmarks, trip planning, sharing, and validated backups</li><li>Responsive images, accessibility checks, Playwright coverage, and CI</li></ul></section>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>The feature-rich local-first implementation is complete. A real public deployment URL, native-speaker proofreading, and remaining editorial verification are required before a production launch.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/Japan-sakura-trails">View source code <span aria-hidden="true">↗</span></a><span>Production deployment pending</span></footer>
+          </div>
+        </dialog>
+
+        <dialog class="case-study-dialog" id="case-study-usa" aria-labelledby="case-study-usa-title">
+          <div class="case-study-shell">
+            <header class="case-study-header">
+              <div>
+                <p class="case-study-kicker">06 / INTERACTIVE TRAVEL PROTOTYPE</p>
+                <h2 id="case-study-usa-title">USA Travel Planner</h2>
+                <p>A component-based travel discovery prototype for finding U.S. destinations, exploring an interactive map, and assembling a session itinerary.</p>
+              </div>
+              <form method="dialog"><button class="dialog-close" value="close" aria-label="Close USA Travel Planner case study">×</button></form>
+            </header>
+            <div class="case-study-metrics" aria-label="USA Travel Planner project summary">
+              <div><span>SCOPE</span><strong>Frontend prototype</strong></div>
+              <div><span>DISCOVERY</span><strong>Search + filters + map</strong></div>
+              <div><span>PERSISTENCE</span><strong>Current session only</strong></div>
+            </div>
+            <div class="case-study-body">
+              <section><h3>Problem</h3><p>Planning across the United States becomes fragmented when destination research, regional filtering, map exploration, and itinerary building live in separate experiences.</p></section>
+              <section><h3>My role</h3><p>I built the React interface, structured the destination data, and implemented the discovery, filtering, detail, interactive-map, and itinerary interactions as a focused frontend prototype.</p></section>
+              <section><h3>Engineering approach</h3><p>React and TypeScript provide typed, reusable components; Vite supports a lightweight development build; memoized filters and a debounced search keep destination discovery responsive.</p></section>
+              <section><h3>Delivered</h3><ul><li>Keyword, region, category, and state-based discovery</li><li>Clickable U.S. map and destination detail experience</li><li>Session itinerary with add and remove interactions</li></ul></section>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>This is an interactive frontend prototype. Persistent saved trips, accounts, backend services, automated testing, and production deployment remain future work.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/usa-travel-planner">View source code <span aria-hidden="true">↗</span></a><span>Frontend prototype</span></footer>
+          </div>
+        </dialog>
+
       <section class="section shell" id="about">
         <div class="section-heading reveal">
           <p class="section-index">01 / ABOUT</p>
@@ -279,7 +331,7 @@
           <div class="section-heading reveal">
             <p class="section-index">03 / SELECTED WORK</p>
             <h2>Products built beyond the surface.</h2>
-            <p class="section-intro">Four projects spanning full-stack products, AI retrieval, deterministic simulation, and product-focused frontend engineering.</p>
+            <p class="section-intro">Six projects spanning full-stack products, AI retrieval, deterministic simulation, financial interfaces, and multilingual travel experiences.</p>
           </div>
 
           <div class="projects-grid">
@@ -389,6 +441,62 @@
                   <a class="project-source" href="https://github.com/araxis07/finance-dashboard" aria-label="View Finance Dashboard source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
                 </div>
                 <p class="project-statusline"><span></span>Frontend MVP · OCR and backend integration planned</p>
+              </div>
+            </article>
+
+            <article class="project-card project-sakura reveal">
+              <div class="project-topline"><span>05</span><span>MULTILINGUAL TRAVEL PRODUCT</span></div>
+              <div class="project-window project-screenshot project-sakura-visual">
+                <img src="https://raw.githubusercontent.com/araxis07/Japan-sakura-trails/main/public/images/mount-fuji.jpg" alt="Mount Fuji media from the Sakura Trails project" loading="lazy" decoding="async" />
+                <div class="sakura-product-mark" aria-hidden="true">
+                  <span>SAKURA TRAILS</span>
+                  <strong>93 places · 4 languages</strong>
+                </div>
+                <span class="visual-badge">Project media · Mount Fuji</span>
+              </div>
+              <div class="project-copy">
+                <h3>Sakura Trails</h3>
+                <p>A local-first Japan travel guide with multilingual discovery, sourced destination content, opt-in maps, private trip planning, and an accessible Three.js landscape.</p>
+                <ul class="project-highlights">
+                  <li>Nine regions and 93 destinations</li>
+                  <li>Japanese, English, Thai, and Chinese</li>
+                  <li>Prerendering, Playwright, axe, and CI</li>
+                </ul>
+                <div class="tags"><span>React</span><span>TypeScript</span><span>Three.js</span><span>Leaflet</span></div>
+                <div class="project-actions">
+                  <button class="project-link project-case-study" type="button" data-case-study-open="case-study-sakura">View case study <span aria-hidden="true">→</span></button>
+                  <a class="project-source" href="https://github.com/araxis07/Japan-sakura-trails" aria-label="View Sakura Trails source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-statusline"><span></span>Feature-rich build · production deployment pending</p>
+              </div>
+            </article>
+
+            <article class="project-card project-usa reveal" data-delay="1">
+              <div class="project-topline"><span>06</span><span>INTERACTIVE TRAVEL PROTOTYPE</span></div>
+              <div class="project-window" aria-hidden="true">
+                <div class="window-bar"><i></i><i></i><i></i><span>usa.travel-planner</span></div>
+                <div class="usa-visual">
+                  <div class="usa-route"><span></span><span></span><span></span></div>
+                  <div class="usa-destination-card destination-west"><b>WEST</b><strong>National Parks</strong></div>
+                  <div class="usa-destination-card destination-central"><b>CENTRAL</b><strong>Road Trips</strong></div>
+                  <div class="usa-destination-card destination-east"><b>EAST</b><strong>City Breaks</strong></div>
+                  <div class="usa-itinerary-chip">3 stops · itinerary ready</div>
+                </div>
+              </div>
+              <div class="project-copy">
+                <h3>USA Travel Planner</h3>
+                <p>An interactive React prototype for discovering U.S. destinations through search, regional filters, a clickable map, destination details, and session-based itinerary building.</p>
+                <ul class="project-highlights">
+                  <li>Debounced search and multi-filter discovery</li>
+                  <li>Interactive state map and destination modals</li>
+                  <li>Add and remove itinerary workflow</li>
+                </ul>
+                <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>SVG</span></div>
+                <div class="project-actions">
+                  <button class="project-link project-case-study" type="button" data-case-study-open="case-study-usa">View case study <span aria-hidden="true">→</span></button>
+                  <a class="project-source" href="https://github.com/araxis07/usa-travel-planner" aria-label="View USA Travel Planner source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-statusline"><span></span>Frontend prototype · persistence and backend planned</p>
               </div>
             </article>
           </div>
