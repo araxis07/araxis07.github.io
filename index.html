@@ -251,25 +251,29 @@
           <div class="case-study-shell">
             <header class="case-study-header">
               <div>
-                <p class="case-study-kicker">06 / INTERACTIVE TRAVEL PROTOTYPE</p>
-                <h2 id="case-study-usa-title">USA Travel Planner</h2>
-                <p>A component-based travel discovery prototype for finding U.S. destinations, exploring an interactive map, and assembling a session itinerary.</p>
+                <p class="case-study-kicker">06 / MULTILINGUAL TRAVEL PLATFORM</p>
+                <h2 id="case-study-usa-title">Roam America · USA Travel Planner</h2>
+                <p>A five-language guide and itinerary planner for exploring all 50 U.S. states through curated destination content, interactive discovery, and local-first trip planning.</p>
               </div>
               <form method="dialog"><button class="dialog-close" value="close" aria-label="Close USA Travel Planner case study">×</button></form>
             </header>
             <div class="case-study-metrics" aria-label="USA Travel Planner project summary">
-              <div><span>SCOPE</span><strong>Frontend prototype</strong></div>
-              <div><span>DISCOVERY</span><strong>Search + filters + map</strong></div>
-              <div><span>PERSISTENCE</span><strong>Current session only</strong></div>
+              <div><span>CONTENT</span><strong>50 states · 150 places</strong></div>
+              <div><span>LOCALIZATION</span><strong>Five languages</strong></div>
+              <div><span>DELIVERY</span><strong>1,005 prerendered pages</strong></div>
             </div>
             <div class="case-study-body">
-              <section><h3>Problem</h3><p>Planning across the United States becomes fragmented when destination research, regional filtering, map exploration, and itinerary building live in separate experiences.</p></section>
-              <section><h3>My role</h3><p>I built the React interface, structured the destination data, and implemented the discovery, filtering, detail, interactive-map, and itinerary interactions as a focused frontend prototype.</p></section>
-              <section><h3>Engineering approach</h3><p>React and TypeScript provide typed, reusable components; Vite supports a lightweight development build; memoized filters and a debounced search keep destination discovery responsive.</p></section>
-              <section><h3>Delivered</h3><ul><li>Keyword, region, category, and state-based discovery</li><li>Clickable U.S. map and destination detail experience</li><li>Session itinerary with add and remove interactions</li></ul></section>
+              <section><h3>Problem</h3><p>Planning a trip across the United States becomes fragmented when destination research, comparison, maps, routes, and daily schedules live in separate services.</p></section>
+              <section><h3>My role</h3><p>I designed and engineered the product architecture, multilingual content model, discovery experience, state and place guides, daily planner, offline workflow, optional cloud trips, and quality pipeline.</p></section>
+              <section><h3>Engineering approach</h3><p>React 19 and TypeScript power the interface; Vite produces localized static pages; Leaflet supports maps; browser storage and a service worker enable local-first planning; optional Supabase services add account copies and expiring shared snapshots.</p></section>
+              <section><h3>Delivered</h3><ul><li>50 state guides, 150 place profiles, and 450 credited local photographs</li><li>Search, filters, favorites, comparison, route-aware daily planning, backups, printing, and offline reading</li><li>Five-language interfaces, optional cloud sharing, a local Content Studio, Playwright, axe, and CI</li></ul></section>
             </div>
-            <aside class="case-study-note"><strong>Current status</strong><p>This is an interactive frontend prototype. Persistent saved trips, accounts, backend services, automated testing, and production deployment remain future work.</p></aside>
-            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/usa-travel-planner">View source code <span aria-hidden="true">↗</span></a><span>Frontend prototype</span></footer>
+            <div class="case-study-gallery" aria-label="Verified Roam America interface screenshots">
+              <figure><img src="assets/roam-america-home.webp" alt="Roam America discovery homepage with Monument Valley hero and trip search controls" loading="lazy" decoding="async" /><figcaption>Discovery homepage · captured from Roam America v3</figcaption></figure>
+              <figure><img src="assets/roam-america-planner.webp" alt="Roam America daily planner with California activities and route controls" loading="lazy" decoding="async" /><figcaption>Daily itinerary workspace · captured from Roam America v3</figcaption></figure>
+            </div>
+            <aside class="case-study-note"><strong>Current status</strong><p>The feature-rich local-first build is implemented and verified. Public hosting, production environment configuration, and activation of the optional Supabase account services remain before launch.</p></aside>
+            <footer class="case-study-footer"><a class="button button-primary" href="https://github.com/araxis07/usa-travel-planner">View source code <span aria-hidden="true">↗</span></a><span>Deployment-ready build · public launch pending</span></footer>
           </div>
         </dialog>
 
@@ -472,31 +476,25 @@
             </article>
 
             <article class="project-card project-usa reveal" data-delay="1">
-              <div class="project-topline"><span>06</span><span>INTERACTIVE TRAVEL PROTOTYPE</span></div>
-              <div class="project-window" aria-hidden="true">
-                <div class="window-bar"><i></i><i></i><i></i><span>usa.travel-planner</span></div>
-                <div class="usa-visual">
-                  <div class="usa-route"><span></span><span></span><span></span></div>
-                  <div class="usa-destination-card destination-west"><b>WEST</b><strong>National Parks</strong></div>
-                  <div class="usa-destination-card destination-central"><b>CENTRAL</b><strong>Road Trips</strong></div>
-                  <div class="usa-destination-card destination-east"><b>EAST</b><strong>City Breaks</strong></div>
-                  <div class="usa-itinerary-chip">3 stops · itinerary ready</div>
-                </div>
+              <div class="project-topline"><span>06</span><span>MULTILINGUAL TRAVEL PLATFORM</span></div>
+              <div class="project-window project-screenshot">
+                <img src="assets/roam-america-home.webp" alt="Roam America travel discovery homepage" loading="lazy" decoding="async" />
+                <span class="visual-badge">Verified product UI · v3</span>
               </div>
               <div class="project-copy">
-                <h3>USA Travel Planner</h3>
-                <p>An interactive React prototype for discovering U.S. destinations through search, regional filters, a clickable map, destination details, and session-based itinerary building.</p>
+                <h3>Roam America</h3>
+                <p>A five-language travel guide and itinerary planner for all 50 U.S. states, combining curated destination content, route-aware daily planning, offline reading, and optional cloud sharing.</p>
                 <ul class="project-highlights">
-                  <li>Debounced search and multi-filter discovery</li>
-                  <li>Interactive state map and destination modals</li>
-                  <li>Add and remove itinerary workflow</li>
+                  <li>50 states, 150 places, and 450 credited photos</li>
+                  <li>Five languages and 1,005 prerendered pages</li>
+                  <li>Daily planner, offline saves, and optional cloud trips</li>
                 </ul>
-                <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>SVG</span></div>
+                <div class="tags"><span>React</span><span>TypeScript</span><span>Leaflet</span><span>Supabase</span></div>
                 <div class="project-actions">
                   <button class="project-link project-case-study" type="button" data-case-study-open="case-study-usa">View case study <span aria-hidden="true">→</span></button>
                   <a class="project-source" href="https://github.com/araxis07/usa-travel-planner" aria-label="View USA Travel Planner source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
                 </div>
-                <p class="project-statusline"><span></span>Frontend prototype · persistence and backend planned</p>
+                <p class="project-statusline"><span></span>Deployment-ready foundation · public hosting and Supabase setup pending</p>
               </div>
             </article>
           </div>
