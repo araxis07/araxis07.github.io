@@ -58,9 +58,10 @@ if ('IntersectionObserver' in window) {
 
 const dialogOpeners = new WeakMap();
 document.querySelectorAll('[data-case-study-open]').forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (event) => {
     const dialog = document.getElementById(button.dataset.caseStudyOpen);
     if (!(dialog instanceof HTMLDialogElement) || dialog.open) return;
+    event.preventDefault();
     closeNavigation();
     dialogOpeners.set(dialog, button);
     root.classList.add('dialog-open');

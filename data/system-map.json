@@ -1,0 +1,114 @@
+{
+  "relationship": "Portfolio categories and selected projects",
+  "root": "ARAXIS07.SYS",
+  "branches": [
+    {
+      "id": "web",
+      "label": "WEB PRODUCTS",
+      "color": "accent",
+      "projects": [
+        {
+          "name": "Siam Luxe",
+          "repo": "Siam-Luxe",
+          "description": "Ordering + reservations",
+          "stack": "Next.js / Supabase",
+          "case_study": "case-study-siam",
+          "number": 1
+        },
+        {
+          "name": "AI Knowledge Base",
+          "repo": "AI-Knowledge",
+          "description": "Document search + grounded Q&A",
+          "stack": "Next.js / pgvector",
+          "case_study": "case-study-ai",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "DATA INTERFACES",
+      "color": "cyan",
+      "projects": [
+        {
+          "name": "Finance Dashboard",
+          "repo": "finance-dashboard",
+          "description": "Local finance dashboard",
+          "stack": "Next.js / Recharts",
+          "case_study": "case-study-finance",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "TRAVEL EXPERIENCES",
+      "color": "pink",
+      "projects": [
+        {
+          "name": "Sakura Trails",
+          "repo": "Japan-sakura-trails",
+          "description": "Japan guide + trip planning",
+          "stack": "React / Three.js",
+          "case_study": "case-study-sakura",
+          "number": 5
+        },
+        {
+          "name": "Roam America",
+          "repo": "usa-travel-planner",
+          "description": "USA guide + daily planner",
+          "stack": "React / TypeScript",
+          "case_study": "case-study-usa",
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "terminal",
+      "label": "TERMINAL SYSTEMS",
+      "color": "green",
+      "projects": [
+        {
+          "name": "Nexus Tech",
+          "repo": "Nexus-Tech",
+          "description": "Offline business simulation",
+          "stack": "Python / SQLite",
+          "case_study": "case-study-nexus",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "repository": "araxis07/Siam-Luxe",
+      "path": "README.md",
+      "blob_sha": "1d2144baac95d3885a5c53f0de6d2a10466cd9fe"
+    },
+    {
+      "repository": "araxis07/AI-Knowledge",
+      "path": "README.md",
+      "blob_sha": "a1cc30f46e6ddd87da850fe4974249f3900773c2"
+    },
+    {
+      "repository": "araxis07/Nexus-Tech",
+      "path": "README.md",
+      "blob_sha": "7e50f303e0ff17441f63e15d1476513e30f6c9bb"
+    },
+    {
+      "repository": "araxis07/finance-dashboard",
+      "path": "README.md",
+      "blob_sha": "c110b7ecfc9a560996abdc00825821ba45c5f9c4"
+    },
+    {
+      "repository": "araxis07/Japan-sakura-trails",
+      "path": "README.md",
+      "blob_sha": "1eecb2dcabddffe66192a22ce758775a26bb248a"
+    },
+    {
+      "repository": "araxis07/usa-travel-planner",
+      "path": "README.md",
+      "blob_sha": "afd0556aa14388ebb54db80416f8102259705731"
+    }
+  ]
+}
