@@ -34,3 +34,9 @@ Edit `data/system-map.json`, then run `python3 scripts/system_map.py` to regener
 
 GitHub Pages publishes the website directly from the repository root after each push to `main`.
 
+
+## Case study navigation
+
+Each case study has a stable fragment URL (`#case-study-siam`, `#case-study-ai`, `#case-study-nexus`, `#case-study-finance`, `#case-study-sakura`, `#case-study-usa`). Opening a case study updates browser history; direct entry and Back/Forward restore the matching dialog. Close/Escape returns to the previous fragment, with a `#projects` fallback for direct visits. Each dialog includes a permanent link. Without JavaScript, project-card anchors reveal the corresponding case study inline.
+
+The System Map starts collapsed on narrow screens, except when opened through `#system-map`. Readers can expand it at any time. The three introductory case-study links and all six project cards remain available.

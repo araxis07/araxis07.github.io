@@ -57,28 +57,59 @@ if ('IntersectionObserver' in window) {
 }
 
 const dialogOpeners = new WeakMap();
+const caseDialogs = [...document.querySelectorAll('.case-study-dialog')];
+const caseFromHash = () => caseDialogs.find((dialog) => `#${dialog.id}` === window.location.hash);
+const openCaseStudy = (dialog, opener) => {
+  if (dialog.open) return;
+  caseDialogs.forEach((other) => { if (other.open) other.close(); });
+  closeNavigation();
+  if (opener) dialogOpeners.set(dialog, opener);
+  root.classList.add('dialog-open');
+  dialog.showModal();
+  const shell = dialog.querySelector('.case-study-shell');
+  if (shell) shell.scrollTop = 0;
+  dialog.querySelector('.dialog-close')?.focus();
+};
+const syncCaseStudy = () => {
+  const target = caseFromHash();
+  caseDialogs.forEach((dialog) => { if (dialog.open && dialog !== target) dialog.close(); });
+  if (target) openCaseStudy(target);
+};
 document.querySelectorAll('[data-case-study-open]').forEach((button) => {
   button.addEventListener('click', (event) => {
     const dialog = document.getElementById(button.dataset.caseStudyOpen);
     if (!(dialog instanceof HTMLDialogElement) || dialog.open) return;
+    // Keep normal link actions such as opening a new tab available.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
-    closeNavigation();
-    dialogOpeners.set(dialog, button);
-    root.classList.add('dialog-open');
-    dialog.showModal();
-    const shell = dialog.querySelector('.case-study-shell');
-    if (shell) shell.scrollTop = 0;
-    dialog.querySelector('.dialog-close')?.focus();
+    history.pushState({ portfolioCase: dialog.id, returnHash: location.hash }, '', `#${dialog.id}`);
+    openCaseStudy(dialog, button);
   });
 });
-document.querySelectorAll('.case-study-dialog').forEach((dialog) => {
+caseDialogs.forEach((dialog) => {
   dialog.addEventListener('click', (event) => {
     if (event.target === dialog) dialog.close();
   });
   dialog.addEventListener('close', () => {
+    if (caseDialogs.some((other) => other.open)) return;
     root.classList.remove('dialog-open');
-    dialogOpeners.get(dialog)?.focus({ preventScroll: true });
+    if (location.hash === `#${dialog.id}`) {
+      if (history.state?.portfolioCase === dialog.id) history.back();
+      else history.replaceState(null, '', '#projects');
+    }
+    const opener = dialogOpeners.get(dialog) || document.querySelector(`.project-case-study[data-case-study-open="${dialog.id}"]`);
+    opener?.focus({ preventScroll: true });
   });
+});
+window.addEventListener('popstate', syncCaseStudy);
+window.addEventListener('hashchange', syncCaseStudy);
+syncCaseStudy();
+
+// Keep the complete map available without making mobile readers scroll past it.
+const systemMap = document.getElementById('system-map');
+if (systemMap && window.matchMedia('(max-width:760px)').matches && location.hash !== '#system-map') systemMap.open = false;
+window.addEventListener('hashchange', () => {
+  if (systemMap && location.hash === '#system-map') systemMap.open = true;
 });
 
 let scrollFrame = 0;
